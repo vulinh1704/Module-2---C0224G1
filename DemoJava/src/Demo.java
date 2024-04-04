@@ -4,7 +4,7 @@ public class Demo {
 
     public static void main(String[] args) {
 
-       // System.out.println(a);
+        // System.out.println(a);
         /*
         Kiểu dữ liệu:
         số nguyên (1, 3,5,8)
@@ -51,17 +51,41 @@ public class Demo {
         }
          */
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("Mhap so di: ");
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Mhap so di: ");
 //        int a = input.nextInt();
 //        double b = input.nextDouble();
-        String str = input.nextLine();
-        System.out.println(str);
+//        String str = input.nextLine();
+//        System.out.println(str);
+
+        // main + tab
+        // sout + tab
+        // Hi
+
+
+
+    /*
+    int, short, byte, long
+    double, float
+    char
+    boolean
+    String
+     */
+//    String a = "Linh";
+
+
+        Scanner inputNumber = new Scanner(System.in);
+        Scanner inputString = new Scanner(System.in);
+        // Alt + Enter
+
+        System.out.println("Nhập vào tuooir");
+        int age = inputNumber.nextInt();  // "Enter <=> \n"
+        System.out.println("Nhập tên: ");
+        String name = inputString.nextLine(); // "" \n
+        System.out.println(name + " có tuoi là: " + age);
+
+
 
     }
-
-    // main + tab
-    // sout + tab
-    // Hi
 
 }
