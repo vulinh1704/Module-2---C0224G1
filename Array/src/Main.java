@@ -12,10 +12,51 @@ public class Main {
         System.out.println(Arrays.toString(array));
 
          */
-        int[] arr = {1, 5, 6, 4, 2, 4, 32}; // Cách khai báo 2
+//        int[] arr = {1, 5, 6, 4, 2, 4, 32}; // Cách khai báo 2
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.println(arr[i]);
+//        }
+//        // Cách duyệt 2: dùng for each
+//        System.out.println("Cách 2: ");
+//        for(int item: arr) { // 5
+//            System.out.println(item);
+//        }
+
+
+        int[] a = {1, 9, 3, 2}; //  {1, 9, 3, 2} => {1, 3, 9, 2} => {1, 2,3,9}
+        for (int i = 0; i < a.length - 1; i++) {  // i = 2
+            for (int j = i + 1; j < a.length; j++) { // j = 3
+                if (a[i] > a[j]) { // 9 > 3
+                    int x = a[i];
+                    a[i] = a[j];
+                    a[j] = x;
+                }
+            }
+        }
+        System.out.printf("Hello %d", 10);
+
+        int[] a1 = {1, 3, 4};
+//        m(4.5, 3.4, 2.1);
+    }
+
+
+    static int m(int... x) { // int[]x = [1, 3 ,4]
+        int b = 0;
+        for (int a : x) {
+            b += a;
+        }
+        return b;
     }
 
     public static void getA(int[] arr, int a) {
 
     }
+
+    static void method1(int a){  }
+
+    static void method1(float a){  }
+
+    static void method1(String c){  }
+
+    static void method1(double d){  }
 }
