@@ -40,9 +40,17 @@ public class Product {
         this.quantity = quantity;
     }
 
+
+    public static void go() { // Các phương thức static chỉ có thể gọi các thành phần static
+        System.out.println(nameStore);
+    }
+
+    public void go2() {
+        System.out.println(nameStore);
+    }
+
     public static void main(String[] args) {
         Product product = new Product(1, "Bánh mì", 22);
-        System.out.println(Product.id);
         Product product2 = new Product(2, "Bánh mì 2", 23);
         System.out.println(Product.nameStore);
         Product.nameStore = "Hà Nội";
